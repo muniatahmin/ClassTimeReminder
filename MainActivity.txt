@@ -1,0 +1,9 @@
+fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Snackbar.make(view, "See Whole Week Routine", Snackbar.LENGTH_LONG)
+                        .setAction("Action", null).show();
+                Intent intentRoutine=new Intent(this,Routine.class);
+                startActivity(intentRoutine);
+            }
+        });
