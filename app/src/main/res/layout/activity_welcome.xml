@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#80FF9800"
+    android:orientation="vertical"
+    tools:context=".WelcomeActivity">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_marginBottom="-175dp"
+        android:gravity="center"
+        android:text="Class Time\nReminder\nApp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:gravity="center"
+        android:text="Welcome\nTo"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView4"
+        android:layout_marginTop="200dp"
+        android:onClick="onClickContinue"
+        android:text=">>    Continue    >>"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+</RelativeLayout>
