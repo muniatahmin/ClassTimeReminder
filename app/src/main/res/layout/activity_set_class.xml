@@ -4,23 +4,44 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/linearLayoutRoot"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical"
+    android:scrollbars="vertical"
     tools:context=".SetClassActivity">
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Enter Subject Title"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
     <EditText
         android:id="@+id/editText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:gravity="clip_horizontal|center"
         android:hint="Type Subject Title"
         android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Enter Subject Day"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
     <EditText
         android:id="@+id/editText2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:gravity="clip_horizontal|center"
         android:hint="Type Subject Day"
         android:inputType="textPersonName" />
 
@@ -28,17 +49,33 @@
         android:layout_width="match_parent"
         android:layout_height="50dp" />
 
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Set Subject Time"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
     <EditText
         android:id="@+id/editText3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:gravity="clip_horizontal|center"
         android:hint="Enter Subject Time"
         android:inputType="time" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="onClickDone"
         android:text="Done" />
+
 </LinearLayout>
