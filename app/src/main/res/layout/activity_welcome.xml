@@ -22,7 +22,6 @@
         android:id="@+id/textView3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="150dp"
         android:gravity="center"
         android:text="Welcome\nTo"
         android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
@@ -35,5 +34,6 @@
         android:layout_marginTop="200dp"
         android:onClick="onClickContinue"
         android:text=">>    Continue    >>"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:visibility="invisible" />
 </RelativeLayout>
